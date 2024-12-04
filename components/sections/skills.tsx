@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { PatternCard } from "@/components/ui/pattern-card";
 import { Badge } from "@/components/ui/badge";
+import { platform } from "os";
 
 export function SkillsSection() {
   const skillCategories = [
@@ -31,6 +32,11 @@ export function SkillsSection() {
       username: "parasraina",
       url: "https://www.codechef.com/users/parasraina",
     },
+    {
+      platform: "codeforces",
+      username: "parasraina_",
+      url:"https://codeforces.com/profile/parasraina_"
+    }
   ];
 
   return (

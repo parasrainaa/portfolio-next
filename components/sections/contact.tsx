@@ -9,6 +9,8 @@ import { MailIcon, MessageSquareIcon, SendIcon } from "lucide-react";
 
 export function ContactSection() {
   return (
+    <div>
+    </div>
     // <section className="py-20 px-4 bg-muted/30">
     //   <div className="max-w-6xl mx-auto">
     //     <motion.div
