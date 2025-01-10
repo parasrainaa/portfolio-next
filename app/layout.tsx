@@ -1,14 +1,12 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
-import { ThemeProvider } from '@/components/theme/theme-provider';
-import { Header } from '@/components/layout/header';
+import type { Metadata } from "next";
+import { JetBrains_Mono } from "next/font/google";
+import "./globals.css";
 
-const inter = Inter({ subsets: ['latin'] });
+const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'ParasIsCracked',
-  description: 'passionate software developer who enjoys problem solving',
+  title: "Ashwani Paras | Software Engineer",
+  description: "Portfolio website of Ashwani Paras, a software engineer",
 };
 
 export default function RootLayout({
@@ -17,17 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <ThemeProvider
-          attribute="class"
-          defaultTheme="dark"
-          enableSystem={false}
-          disableTransitionOnChange
-        >
-          <Header />
-          {children}
-        </ThemeProvider>
+    <html lang="en" className="dark">
+      <body className={jetbrainsMono.className}>
+        {children}
       </body>
     </html>
   );

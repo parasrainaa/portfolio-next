@@ -1,21 +1,30 @@
-import * as React from 'react';
-import { Heart, Coffee } from 'lucide-react';
+"use client";
+
+import { motion } from "framer-motion";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="flex flex-col items-center justify-center 
-      text-sm text-muted-foreground space-y-2 p-4 
-      transition-all duration-300 hover:text-primary">
-      <div className="flex items-center space-x-2">
-        <span>Crafted with</span>
-        <Heart className="w-4 h-4 text-red-500 animate-pulse" fill="currentColor" />
-        <span>and</span>
-        <Coffee className="w-4 h-4 text-brown-500" />
-      </div>
-      <div className="opacity-70">
-        © {currentYear} Paras | All Rights Reserved
+    <footer className="py-8 px-4 font-mono">
+      <div className="max-w-4xl mx-auto">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.8 }}
+        >
+          <pre className="text-muted-foreground text-center whitespace-pre-wrap break-words">
+            {`
++${'-'.repeat(40)}+
+|                                        |
+|  © ${currentYear} Made with ❤️ by Ashwani Paras  |
+|                                        |
++${'-'.repeat(40)}+
+
+$ exit
+> _`}
+          </pre>
+        </motion.div>
       </div>
     </footer>
   );
