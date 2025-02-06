@@ -1,12 +1,11 @@
 import type { Metadata } from "next";
-import { JetBrains_Mono } from "next/font/google";
+import Link from "next/link";
+import { Nav } from "@/components/layout/nav";
 import "./globals.css";
 
-const jetbrainsMono = JetBrains_Mono({ subsets: ["latin"] });
-
 export const metadata: Metadata = {
-  title: "Ashwani Paras | Software Engineer",
-  description: "Portfolio website of Ashwani Paras, a software engineer",
+  title: "Ashwani Paras",
+  description: "Software Engineer based in India",
 };
 
 export default function RootLayout({
@@ -15,9 +14,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={jetbrainsMono.className}>
-        {children}
+    <html lang="en">
+      <body>
+        <div className="max-w-2xl mx-auto px-4 py-8">
+          <header className="flex justify-between items-center mb-8">
+            <Link href="/" className="nav-link">
+              <span className="font-medium">HOME</span>
+            </Link>
+            <Nav />
+          </header>
+          {children}
+        </div>
       </body>
     </html>
   );

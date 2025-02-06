@@ -10,23 +10,20 @@ Always eager to take on new challenges and collaborate on interesting projects.`
 export function AboutSection() {
   return (
     <section className="py-20 px-4">
-      <div className="max-w-4xl mx-auto font-mono">
+      <div className="max-w-4xl mx-auto">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.8 }}
-          className="mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="space-y-4"
         >
-          <pre className="text-muted-foreground mb-4 whitespace-pre-wrap">
-            {`
-$ cat about.md
-> Loading personal information...
-
-${aboutText.split('\n').map(line => line ? '> ' + line : '>').join('\n')}
-
-$ echo "Open to new opportunities and collaborations..."
-> _`}
-          </pre>
+          <h2 className="text-3xl font-bold">About Me</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            {aboutText}
+          </p>
+          <p className="text-muted-foreground">
+            Open to new opportunities and collaborations...
+          </p>
         </motion.div>
       </div>
     </section>

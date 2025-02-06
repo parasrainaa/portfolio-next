@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ProjectCard } from "../project-card";
-import { AsciiArt, AsciiDivider } from "../ascii-art";
 import { title } from "process";
 
 const projects = [
@@ -60,7 +59,7 @@ $ ls -la
 > Displaying all projects...`}
           </pre>
           
-          <AsciiArt art={AsciiDivider} className="mb-8" />
+          <div className="w-full h-px bg-border mb-8" />
         </motion.div>
 
         <div className="grid grid-cols-1 gap-6">
