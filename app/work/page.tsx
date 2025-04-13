@@ -37,26 +37,6 @@ export default function Work() {
               View Project →
             </a>
           </div>
-
-          <div>
-            <h2 className="text-lg font-medium mb-2">Notion Clone</h2>
-            <p className="text-muted-foreground mb-2">
-              A full-stack Notion-like workspace with real-time collaboration and rich text editing.
-            </p>
-            <a href="https://notion-clone-rho-nine.vercel.app/" target="_blank" rel="noopener noreferrer">
-              View Project →
-            </a>
-          </div>
-
-          <div>
-            <h2 className="text-lg font-medium mb-2">Genius AI</h2>
-            <p className="text-muted-foreground mb-2">
-              AI SaaS platform offering conversation, image, video, and music generation capabilities.
-            </p>
-            <a href="https://genius-ai-rho.vercel.app/" target="_blank" rel="noopener noreferrer">
-              View Project →
-            </a>
-          </div>
         </div>
       </div>
     </main>

@@ -2,8 +2,8 @@
 
 import { motion } from "framer-motion";
 
-const aboutText = `I'm a passionate software engineer with a love for building innovative solutions. 
-Currently, interested in low level systems programming and AI/ML. 
+const aboutText = `I'm a passionate software engineer with a love for problem solving. 
+Currently, interested in low level systems programming, compilers, functional porgramming AI. 
 
 Always eager to take on new challenges and collaborate on interesting projects.`;
 
