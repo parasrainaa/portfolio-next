@@ -11,16 +11,16 @@ export default function About() {
 
         <p className="text-muted-foreground">
           I believe clarity in the design, a sound architecture, and the evolution of software are the
-          foundation of building powerful and maintainable software. I'm building developer tooling while maintaining several Open Source projects.
+          foundation of building powerful and maintainable software. I'm building developer tooling while working in rust and typescirpt.
         </p>
 
         <p className="text-muted-foreground">
           Want to chat? DM me on{" "}
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
+          <a href="https://x.com/ParasRaina_" target="_blank" rel="noopener noreferrer">
             Twitter
           </a>
           {" "}or{" "}
-          <a href="https://github.com/ParasRaina01" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/parasrainaa" target="_blank" rel="noopener noreferrer">
             GitHub
           </a>
         </p>

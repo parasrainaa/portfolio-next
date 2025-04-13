@@ -4,7 +4,7 @@ export default function Work() {
       <h1 className="text-2xl font-medium mb-8">Work</h1>
       <div className="prose prose-invert">
         <p className="text-muted-foreground mb-8">
-          I author, maintain or co-maintain a few open-source projects
+          I have worked on some open source projects.
         </p>
 
         <div className="space-y-12">
